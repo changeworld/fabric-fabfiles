@@ -18,6 +18,10 @@ My fabric files.
 
     $ fab tag:[tag_name],[tag_message]
 
+### deploy
+
+    $ fab [develop|production] deploy:[tag or branch name]
+
 ## Contributing
 
 1. Fork it ( https://github.com/changeworld/fabric-fabfiles/fork )
