@@ -1,7 +1,7 @@
 from fabric.api import env, local, run
 
 def tag(name="", message=""):
-  local("git checkout master; git pull origin master; git tag -a %(n)s -m %(m)s; git push origin %(n)s" % { "n" : name, "m" : message })
+  local("git checkout master; git pull origin master; git tag -a %(n)s -m '%(m)s'; git push origin %(n)s" % { "n" : name, "m" : message })
 
 def develop():
   # TODO: Change host name
